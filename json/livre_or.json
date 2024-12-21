@@ -1,0 +1,84 @@
+[
+    {
+        "article_name": "nom de l'article",
+        "into_article": "intro",
+        "parties_list": [
+            {
+                "partie_name": "name",
+                "intro": "texte_into",
+                "corps": "texte_corps"
+            },
+            {
+                "partie_name": "name",
+                "intro": "texte_into",
+                "corps": "texte_corps"
+            }
+        ]
+    },
+    {
+        "article_name": "L'Histoire du Scoutisme",
+        "intro_article": "Le Scoutisme fut créé en 1907 par le Colonel Robert Baden-Powel, plus tard nommé général, suite au siège de Mafeking (1900) dans la guerre contre les Boers où il prend conscience que l’« on peut demander à des adolescents autant qu’à des hommes ». Riche de cette expérience, il organisera le premier camp scout sur l’île de Brownsea. Le Scoutisme se propagera d’abord en France par Nicolas Benoit en 1911 puis partout en Europe et dans le monde. La branche des Louveteaux/ Louvettes fut crée par Baden-Powel et Vera Barcley en 1916.",
+        "parties_list": [
+            {
+                "partie_name": "Les Éclaireurs Français",
+                "intro": "Les Éclaireurs Français furent fondés en 1911 par Pierre de Coubertin.",
+                "corps": "Pierre de Coubertin n’étant pas d'accord avec la pédagogie de Baden-Powel enlèvera Promesse et uniformes, bien qu'à peine le mouvement ait ouvert, les scouts se revêtirent par eux-mêmes d'uniformes presque militaires. Le Mouvement ne marchera pas bien et disparaîtra en 1964 pour fusionner avec les EEDF. Certaines troupes rejoindront cependant les ENF. Ce fut un mouvement masculin et laïque."
+            },
+            {
+                "partie_name": "Les EDF",
+                "intro": "Les EDF ou Éclaireurs de France ont été créés le 2 décembre 1911 par Nicolas Benoit et George Bertier.",
+                "corps": "En 1914, les premières Éclaireuses font leur apparition. Ensuite, en 1921, ce sont les premières meutes qui sont fondées. Lors de la Seconde Guerre mondiale, bien que le scoutisme soit interdit, les scouts se réunissent dans le plus grand secret et organisent des opérations de secourisme et des accueils de familles « évacuées ». Leur action sera considérée comme un acte de résistance et nuisible au régime nazi par le IIIème Reich. En 1945, les EDF participent avec les FFE à la création d’un nouveau mouvement : les FFC ou Francs et Franches Camarades. Puis, en 1957, les Éclaireurs d’Afrique sont fondés. En 1964, trois mouvements scouts fusionnent : les FFE, les Éclaireurs Français et les EDF, pour former les EEDF."
+            },
+            {
+                "partie_name": "Les EEDF",
+                "intro": "Les EEDF ou Éclaireurs et Éclaireuses de France ont été fondés en 1964 par la fusion des EDF, des Éclaireurs Français et de la branche neutre des FFE.",
+                "corps": "Jusqu’en 1978, le mouvement est instable, dû à une lutte intestine entre conservateurs et modernes. Ce mouvement est laïque et prend position dans la politique ainsi que dans l’écologie."
+            },
+            {
+                "partie_name": "Les EUF",
+                "intro": "Les EUF ou Éclaireurs Unioniste Français ont été fondés en janvier 1911 par Samuel Willianson et Henri et Charles Bonnamaux.",
+                "corps": "C’est un mouvement protestant et uniquement masculin. Le louvetisme y fit son apparition en 1921 et les Routiers en 1928. En octobre 1911, dix-neuf troupes furent créées pour un total de 173 scouts. Le coq Gaulois fut pris pour emblème. Le 31 octobre 1920, lors du conseil national, les Éclaireurs Unionistes se détachent des UCJG, Union Chrétienne des Jeunes Gens, et deviennent une association autonome. En août 1940, l’emblème change : du coq Gaulois, il devient la croix fleurdelisée. En 1969, la FFEU fusionne avec les EUF pour fonder les FEEUF."
+            },
+            {
+                "partie_name": "Les FFE ou FFEU",
+                "intro": "La FFE ou Fédération Française des Éclaireuses a été créée en 1921 et est un mouvement exclusivement féminin.",
+                "corps": "Ce fut le seul mouvement n’étant pas formé autour d’une même religion. Ce mouvement ouvert à toutes les religions a vu apparaître trois sections : la section neutre, la section protestante dite unioniste et la section israélite (1927). Les jeunes y ont des appellations différentes des autres mouvements : les petits sont appelés les petites ailes, la clairière devient une envolée, et ainsi de suite. En 1964, les FFE se scindent en trois : une partie rejoint les EDF pour fonder les EEDF, une autre rejoint les EI, et ceux qui restent deviennent les FFEU."
+            },
+            {
+                "partie_name": "Les FEEUF ou EEUDF",
+                "intro": "Les FEEUF ou Fédération des Éclaireurs et Éclaireuses Unionistes de France ont été fondés en 1968 par la fusion des FFEU et des EUF.",
+                "corps": "Le mouvement, à l’image des EEDF, est instable à cause d’une lutte intestine entre traditionalistes et réformateurs. L’explosion est évitée de justesse par Jean Ruellan en 1978. En 1995, en raison des nombreux changements dans le mouvement, notamment un début de mixité dans les unités, le mouvement change de nom pour devenir les EEUDF ou Éclaireurs et Éclaireuses Unionistes de France. C’est un mouvement protestant."
+            },
+            {
+                "partie_name": "Les EI ou EIF et EEIF",
+                "intro": "Les EI/EIF ou Éclaireurs Israélites de France sont fondés en 1923 par Robert Gamzon.",
+                "corps": "C’est un mouvement masculin et juif. Durant la Seconde Guerre mondiale, ils cachèrent des enfants juifs et rejoignirent la résistance. Le mouvement devient les EEIF lorsqu’il fusionne avec la branche israélite des FFE en 1969."
+            },
+            {
+                "partie_name": "Les ENF",
+                "intro": "Les ENF ou Éclaireurs Neutre de France ont été fondés en 1947 par Marcel Lepage.",
+                "corps": "C’est un mouvement neutre mais non laïque, dans un esprit de respect d’autrui. Ce mouvement laisse le choix à chacun de suivre la religion ou l’idéal qu’il veut et les pousse à grandir dans l’idéal qu’ils ont choisi. C’est le seul mouvement qui fonctionne ainsi."
+            },
+            {
+                "partie_name": "Les GDF",
+                "intro": "Les GDF ou Guides de France ont été fondés en 1923 par Mme Duhamel.",
+                "corps": "Après plusieurs années de réticence de l’Église, le mouvement se développe vite après 1927. En 1968, les Farandoles (6-8 ans) voient le jour. En 2004, à Lourdes, il est décidé que les GDF fusionnent avec les Scouts de France pour devenir SGDF. Les Guides de France étaient un mouvement exclusivement féminin et catholique."
+            },
+            {
+                "partie_name": "Les Éclaireurs des Alpes",
+                "intro": "En 1911, l'abbé d'Andrais met sur pied les 'Éclaireurs des Alpes'.",
+                "corps": "Ce mouvement de scoutisme alpin catholique, soutenu par son évêque Mgr Chapon, évolue pour rejoindre les Scouts de France en 1920. La fusion est officialisée en 1923."
+            },
+            {
+                "partie_name": "Scouts de France",
+                "intro": "Les Scouts de France ont été fondés en 1916 par Paul et Marcel Coze.",
+                "corps": "Le mouvement fut d’abord impopulaire auprès de l’Église catholique. Cependant, grâce au Père Jacques Sevin et à l’Abbé Cornette, il fut accepté. En 1924, les Routiers furent créés. En 1971, des réformes pédagogiques provoquent une scission : certains rejoignent les Scouts d’Europe ou fondent les SUF (Scout Unitaire de France). En 2004, les Scouts de France fusionnent avec les Guides de France pour devenir un mouvement mixte."
+            },
+            {
+                "partie_name": "Scouts d’Europe",
+                "intro": "Les Scouts d’Europe en France ont été fondés en 1958 par Jean-Claude Alain.",
+                "corps": "Inspirés par Baden-Powel et le Père Jacques Sevin, leur but était de recréer un scoutisme fidèle aux origines. Bien que confrontée à des difficultés initiales, la branche française s’est finalement intégrée à la fédération internationale."
+            }
+        ]
+    }
+]

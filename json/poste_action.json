@@ -1,0 +1,34 @@
+[
+    {
+        "PA_name": "Nom du poste d'action",
+        "presentation": "court texte de presentation",
+        "Article": [
+            {
+                "Name": "nom de l'article",
+                "intro": "texte_into",
+                "corps": "texte_corps"
+            },
+            {
+                "Name": "nom de l'article 2",
+                "intro": "texte_into",
+                "coprs": "texte_corps"
+            }
+        ]
+    },
+    {
+        "PA_name": "Nom du poste d'action",
+        "presentation": "court texte de presentation",
+        "Article": [
+            {
+                "Name": "nom de l'article",
+                "intro": "texte_into",
+                "corps": "texte_corps"
+            },
+            {
+                "Name": "nom de l'article 2",
+                "intro": "texte_into",
+                "coprs": "texte_corps"
+            }
+        ]
+    }
+]
