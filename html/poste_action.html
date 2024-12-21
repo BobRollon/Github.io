@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style_scout.css">
+	<title>Postes d'Action</title>
+</head>
+<body>
+<script src="script_scout.js"></script>
+
+<header>
+	<img src="En_tete.jpg" class="imgfond img_header" style="height: 100%;">
+	<div class="div_button" style="display: block;">
+		<a href="site_scout.html"><button ><img src="home.ico" class="div_button button"></button></a>
+		<a href="poste_action.html"><button class="button" >Poste d'Action</button></a>
+		<a href="progression.html"><button class="button">Progression</button></a>
+		<a href="technique.html"><button class="button">Technique Scout</button></a>
+		<a href="livre_or.html"><button class="button">Livre d'Or</button></a>
+	</div>
+</header>
+<section>	
+	<aside>
+		<ul>
+			<li onclick="affich_page ('PosteAction','Messager','MenuMessager','ButtonMessager')" id="ButtonMessager" class="Menu">Messager-Journaliste</li>
+			<dl id="MenuMessager">
+				<dd onclick="affich_page('PosteAction','RecapMessager','MenuMessager','ButtonRecapMessager')" id="ButtonRecapMessager" class="Menu">Récapitulatif du Role de Messager</dd>
+				<dd onclick="affich_page('PosteAction','Code','MenuMessager', 'ButtonCode')" id="ButtonCode" class="Menu">Les Principaux Codes</dd>
+			</dl>
+			<li onclick="affich_page ('PosteAction','Pionnier','MenuPionnier','ButtonPionnier')" id="ButtonPionnier" class="Menu">Pionnier-Régisseur</li>
+			<dl id="MenuPionnier">
+				<dd onclick="affich_page('PosteAction','RecapPionnier','MenuPionnier', 'ButtonRecapPionnier')" id="ButtonRecapPionnier" class="Menu"></dd>
+				<dd class="Menu"></dd>
+			</dl>
+			<li onclick="affich_page ('PosteAction','Cuisinier','MenuCuisinier','ButtonCuisinier')" id="ButtonCuisinier" class="Menu">Cuisinier-Maître du Feu</li>
+			<dl id="MenuCuisinier">
+				<dd onclick="affich_page('PosteAction','RecapCuisinier','MenuCuisinier', 'ButtonRecapCuisinier')" id="ButtonRecapCuisinier" class="Menu">Recap PA Cuisinier</dd>
+				<dd onclick="affich_page('PosteAction','Feu','MenuCuisinier', 'Buttonfeu')" id="Buttonfeu" class="Menu">Les Différents types de feu</dd>
+			</dl>
+			<li onclick="affich_page ('PosteAction','Liturgiste','MenuLiturgiste','ButtonLiturgiste')" id="ButtonLiturgiste" class="Menu">Liturgiste</li>
+			<dl id="MenuLiturgiste">
+				<dd onclick="affich_page('PosteAction','RecapLiturgiste','MenuLiturgiste', 'ButtonRecapLiturgiste')" id="ButtonRecapLiturgiste" class="Menu">Recap PA Liturgiste</dd>
+				<dd onclick="affich_page('PosteAction','Priere','MenuLiturgiste', 'ButtonPriere')" id="ButtonPriere" class="Menu">Liste de Prière</dd>
+			</dl>
+			<li onclick="affich_page ('PosteAction','Sportif','MenuSportif','ButtonSportif')" id="ButtonSportif" class="Menu">Sportif-Secouriste</li>
+			<dl id="MenuSportif">
+				<dd onclick="affich_page('PosteAction','RecapSportif','MenuSportif', 'ButtonRecapSportif')" id="ButtonRecapSportif" class="Menu">Recap PA Sportif</dd>
+				<dd onclick="affich_page ('PosteAction','Secourisme','MenuSportif','ButtonSecourisme')" id="ButtonSecourisme" class="Menu">Secourisme</dd>
+			</dl>
+			<li onclick="affich_page ('PosteAction','Topographe','MenuTopographe','ButtonTopographe')" id="ButtonTopographe" class="Menu">Topographe</li>
+			<dl id="MenuTopographe">
+				<dd onclick="affich_page('PosteAction','RecapTopographe','MenuTopographe', 'ButtonRecapTopographe')" id="ButtonRecapTopographe" class="Menu">Recap PA Topographe</dd>
+				<dd onclick="affich_page('PosteAction','TechniqueTopo','MenuTopographe', 'ButtonTechniqueTopo')" id="ButtonTechniqueTopo" class="Menu">Techniques Topographiques</dd>
+			</dl>
+			<li onclick="affich_page ('PosteAction','Bout','MenuBout','ButtonBout')" id="ButtonBout" class="Menu">Bout-en-train</li>
+			<dl id="MenuBout">
+				<dd onclick="affich_page('PosteAction','RecapBout','MenuBout', 'ButtonRecapBout')" id="ButtonRecapBout" class="Menu">Recap PA Bout-en-Train</dd>
+				<dd onclick="affich_page('PosteAction','Veille','MenuBout', 'ButtonVeille')" id="ButtonVeille" class="Menu">La Veillé</dd>
+			</dl>
+		</ul>
+	</aside>
+	
+
+	<div id="HomePA" class="home">
+		<h2>Les Postes d'Action</h2>
+			<p>Cher visiteur, scout ou simple curieux,</p>
+			<p>Au scout, les troupes, ou compagnies, sont divisés en patrouille. Ces patrouilles sont autonome, ou presque, et pour que le fonctionnement de la patrouille marche, chacun à son role. Ce role est défini par les PA ou postes d'action.</p>
+			<p>Ici, cher visiteur, tu découvriras tous les fils des différents Postes d'Action. Tu apprendras tous ce qu'il y a à savoir sur les responsabilités qui t'incombent en tant que membre d'une patrouille.</p>
+			<p>Le PA sont la base du fonctionnement d'une patrouille. Le PA est une responsabilité, un rôle donné à chacun des patrouillards pour faire fonctionner l'unité qu'est la patrouille. Si une personne effectue mal son PA, la partouille entière est mise à mal et ce sont les activités derrière qui en patisse ainsi que l'ambiance de la Patrouille. Au contraire, un PA bien accomplie, c'est un patrouille fonctionnelle dont les activités sont réussites et des scouts joyeux. Mais le PA c'est aussi une voie progression personnelle. Une progression non dans le simple but de se former mais bien une progression pour prendre soin de sa patrouille.</p>
+			<p>Le sytème de PA se décline ainsi. Au cours d'une année, chaque scout est emmené à choisir deux PA, un en septembre et un autre en fin février. Pendant la période, le scout a alors trois responsabilités. Une chez lui, une en activité et une au niveau du materiel de Patrouille. Ainsi, à chaque activité, le CP donne une chose à préparer chez soi à chacun de ses scouts en fonction de leur PA. En activités, chaque PA a la responsabilité d'une partie de la vie de patrouille. Et enfin, chaque PA a son materiel dont il est responsable de la bonne tenue et de l'utilisation.</p>
+			<p>Pour assumer ces responsabilités, chaque scout va devoir se former, progresser. Cela peut se faire par la validation d'épreuves de badges, de rencontre avec des personnes extérieures ou des recherches. A la fin de son service, le scout a acquéri un niveau technique qui lui permettra plus tard d'aider les prochains scouts assumant le PA ou d'assumer des responsabilités au sein de la Patrouille sur des tâches plus importantes où ces aptitudes seront necessaire. Avec ce niveau technique, et pour finir son service, le scout forme sa patrouille au cours d'une activités sur les techniques qu'il a acquise. Pour plus de visualisation, dans l'idéal, un scout finissant un PA a le niveau technique d'un 1er Classe dans cette technique, et il forme sa patrouille sur un niveau de 2nd Classe.</p>
+			<img src="PA\HomePA_1.gif" class="badge" style="margin-left: 4%;">
+			<img src="PA\HomePA_2.gif" class="badge"><img src="PA\HomePA_2.1.gif" class="badge">
+			<img src="PA\HomePA_3.gif" class="badge"><img src="PA\HomePA_3.1.png" class="badge">
+			<img src="PA\HomePA_7.png" class="badge">
+			<img src="PA\HomePA_4.gif" class="badge" style="margin-left: 12%"><img src="PA\HomePA_4.1.png" class="badge">
+			<img src="PA\HomePA_5.gif" class="badge"><img src="PA\HomePA_5.2.png" class="badge">
+			<img src="PA\HomePA_6.jpeg" class="badge">
+
+	</div>
+	
+
+	<div id="Messager" class="brown">
+		<h2>Le Poste d'Action Messager-Journaliste</h2>
+			<p>Si tu es ici, c'est que tu viens d'être nommé au poste d'action de Messager-Journaliste et que tu veux tout savoir pour être le meilleur possible pour ta patrouille ou simplement que tu es curieux et que tu aimerais bien savoir à quoi sert un messager au scout (c'est vrai quoi, les portables ça existe). D'abord sache que tu es au bon endroit. Ensuite, voici la réponse à ton, j'espère insatiable, curiosité. Le Messager-Journaliste a un rôle clé dans la patrouille (comme tous les autres PA mais bon fallait que je le dise), il est celui qui comprend les messages et qui gère la communication car en effet, si les portables existent, dans un camp scout on communique au sifflet. Ensuite, le Messager est le roi du grand jeu. Il en est le moteur. Il est chargé de décoder tous les messages et de les interpréter. Il est le roi du jeu, il connait les règles et est maître de la discrétion et du camouflage.</p>
+			<p>On attend de toi au début d'année que tu connaisse parfaitement ton morse, sur le bout des doigts, ainsi que les codes les plus usuels.</p>
+			<p>A la fin de ton service, il te sera demandé de lire le morse presque comme le français, avec une très grosse nuance sur le presque, de savoir craquer n'importe quel code césar, à la main bien sur, de savoir transmettre et recevoir parfaitement et rapidement n'importe quel message en morse et ce, n'importe quand. On te demandera aussi d'avoir un grand registre de code et de les reconnaître quand tu les vois.</p>
+			<p>Le matériel dont le Messager est responsable est la trousse transmission. C'est le seul PA qui n'a peu ou pas de matos car la trousse à transmission est facultative. Cependant, il y a des éléments obligatoire à avoir. Le matos du messager, celui obligatoire, est le carnet de code et la roue de décodage. Ensuite, les éléments facultatifs sont les pavillons, la lampe, un miroir et un sifflet. Le matériel personnel, qu'un messager doit impérativement avoir dans sa poche tout le temps, est du papier avec un ou des crayons.</p>
+			<p>Mais où est donc le Journaliste?</p>
+			<p>En effet, le Messager est aussi le Journaliste. Cette partie là du PA est assez simple à expliquer. A chaque sortie, il faut faire un rapport minuté durant le week-end puis une fois rentré et avec les photos que va t'envoyer le CP tu vas écrire un rapport en racontant en détail le week-end. Tu le garniras de photo puis le mettra dans le livre d'or de la patrouille. Ce rapport peut prendre plusieurs formes. Tu peux raconter exactement ce que vous avez fait, tu peux le raconter en partant de ton point de vue ou de celui d'un scout imaginaire de la patrouille qui filmerai tout ce qui se passerai ou encore le raconter sous forme de roman. Bref, tu n'as que l'embaras du choix pour faire un super rapport qui rappelera les bon souvenirs à ta patrouille à la fin de l'année. Un petit conseil... c'est le moment de mettre toutes les petites anecdotes du week-end, tout les instants marrant où l'ambiance de patrouille était au top.</p>
+			<p>Voici des liens pour t'aider dans ton poste d'action:
+				<br>
+				<a href="http://www.scoutorama.org/-Techniques-de-communication-.html">http://www.scoutorama.org/-Techniques-de-communication-.html</a>
+				<br>
+				<a href="http://www.scoutorama.org/-Transmissions-.html">http://www.scoutorama.org/-Transmissions-.html</a>
+			</p>
+			<img src="PA\HomePA_2.gif" class="hyper_mono">
+			<img src="PA\HomePA_2.1.gif">
+	</div>
+	
+
+	<div id="RecapMessager" class="brown">
+		<h2>PA Messager Recap</h2>
+			<ol>
+				<li>
+					<h3 class="list">Le rôle de Messager</h3>
+					<ul>
+						<li>
+							<b><ins>Papier et Crayon</ins></b>
+							<b style="color: red;">toujours</b> en poche, un message peut arriver n'importe quand.</li>
+						<li>
+							<ins><b>Montre et Carnet,</b></ins>
+							il faut faire le compte rendu minuté de chaque activité.</li>
+						<li>Rédiger le compte rendu à chaque fin d'activité, mettre si possible des photos pour le livre d'or.</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Matos de Patrouille:</h3>
+					<ul>
+						<dl>
+							<li><b>Trousse à Transmission</b></li>
+							<dd>Pavillon</dd>
+							<dd>Lampe</dd>
+							<dd>Miroir (signal lumineux de jour)</dd>
+							<dd>Sifflet</dd>
+							<li><b>Carnet de Code</b></li>
+							<li><b>Roue de décodage</b></li>
+						</dl>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Les Codes</h3>
+					<ul><dl>
+						<li><b>Code par Grille</b></li>
+						<dd>Escargot : On tourne autour du centre</dd>
+						<dd>Carré de Polybe</dd>
+						<dd>Filtre ou adresse</dd>
+						<li><b>Code Templier: l’ensemble de l’alphabet de ce code forme une forme géométrique.</b></li>
+						<p>ATTENTION : pour distribuer les lettres au niveau des croix, certains commencent en haut et d’autre à droite ainsi > peut être s ou v.</p>
+						<li><b>Code Alphabétique</b></li>
+						<dd>Code César</dd>
+						<dd>Vigenere</dd>
+						<dd>Aplphabet renversé (A=Z; B=Y)</dd>
+						<li><b>Morse</b></li>
+						<dd>Cardiogramme</dd>
+						<dd>Noeud</dd>
+						<li><b>Autre</b></li>
+						<dd>Semaphore</dd>
+						<dd>Alphabet Chinois</dd>
+						<dd>Alphabet  en Barre</dd>
+					</dl></ul>
+				</li>
+				<li>
+					<h3 class="list">Lettres utile du camp:</h3>
+					<ul>
+						<li><b>R (rassau)</b></li>
+						<li><b>CDP (conseil de patrouille)</b></li>
+						<li><b>CDC (conseil des chefs)</b></li>
+						<li><b>B ou D (douche, baquage)</b></li>
+						<li><b>CDB (conseil des Bout-en-train)</b></li>
+						<li><b>CDL (conseil des Liturgistes)</b></li>
+						<li><b>I (inspection ou Intendance)</b></li>
+						<li><b>V (veillé)</b></li>
+					</ul>
+				</li>
+			</ol>
+		<footer>
+			<div class="footer">
+				<a href="PA/Messager/Messager.pdf" download="RecapPAMessager.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Messager</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Messager/Messager.odt" download="RecapPAMessager.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Messager</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="Code" class="brown">
+		<h2>Les Principaux Codes</h2>
+			<h3>Les Codes Templier</h3>	
+				<img src="PA\Messager\code_templier.jpeg" class="CodeTemplier">
+				<img src="PA\Messager\Templier-1.jpg" class="CodeTemplier">
+				<img src="PA\Messager\Templier-2.png" class="CodeTemplier">
+				<img src="PA\Messager\Templier-3.png" class="CodeTemplier">
+			<h3>Cesar et Vigenere</h3>
+				<img src="PA\Messager\vigenere.png" class="big_img hyper_mono">
+			<h3>Autre</h3>
+				<div class="img_container">	
+					<span class="mini_multiple">		
+						<img src="PA\Messager\semaphore.jpeg">
+						<h4>Semaphore</h4>
+					</span>
+					<span class="mini_multiple">	
+						<img src="PA\Messager\alphabet_chinois.jpeg">
+						<h4>Alphabet Chinois</h4>
+						<img src="PA\Messager\alphabet_international.jpeg">
+						<h4>Alphabet Internationale</h4>		
+					</span>
+				</div>
+			<img src="PA\Messager\braille.jpeg" class="hyper_mono big_img">
+			<h4 class="hyper_mono">Alphabet Braille</h4>
+		<footer>
+			<div class="footer">
+				<a href="PA/Messager/Code.pdf" download="Code.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Codes</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Messager/Code.odt" download="Code.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Codes</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="Pionnier" class="green">
+		<h2>Le Poste d'Action du Pionnier-Regisseur</h2>
+			<p>Bienvenue pour découvrir le PA du pionnier. Ce PA est technique, très technique, et si tu en as hérité c'est que tu as quelques années d'experience derrière toi. Alors je vais faire cours. Tu sais que ton rôle est important et que tes responsabilité sont immenses. Sans vouloir te mettre la pression, le camp repose sur tes épaules. Car c'est grâce à toi si la patrouille réussira à dormir la nuit, c'est grâce à toi qu'elle mangera chaud et surtout c'est grâce à toi qu'elle sera au sec lorsqu'il pleuvra durant des jours. Bref, tu fais le confort de ta patrouille et le confort est la première et incontournable étape vers gagner le camp.</p>
+			<p>Ton rôle est de maîtriser le froissartage, l'art de construire avec le bois. Tu dois savoir faire toute sorte de mi-bois maîtriser les différentes façons de faire un tenon-mortèse et savoir quand utiliser laquelle. Tu dois savoir faire un quart bois bien que l'on utilise rarement cette technique. Toute la durée de l'année tu apprendras à tes patrouillards le froissartage pour que lors des instalations du camp ta patrouille réussisse à se procurer son petit confort. Durant cette année tu ne vas guère progresser en froissartage car le niveau technique demandé dès le début de l'année est déjà énorme. Tu dois faire progresser les autres, ta progression sera dans la communication avec les personnes et dans l'enseignement technique.</p>
+			<p>De plus, durant l'année tu seras responsable de tout le matériel de la patrouille. Bien que chacun soit responsable du matériel de son propre PA et de son entretien, tu devras checker le matos qui sort et le matos qui rentre ainsi que son état. C'est par toi que le CP a une vision sur l'entretien du matériel. Et c'est toi qui est garant du stockage de ce-dernier au local. Tu devras donc vérifier que la patrouille ne perd rien et rentre du matériel sec pour qu'il ne moisisse pas dans le local. Tu auras la charge des outils, la plus grande part du matériel de la patrouille, ainsi que des tentes et des bâches et de tout le reste du matos peu ou pas utilisé hors camp. Tu devras, avant chaque départ, venir en avance au local avec ton CP pour préparer le matériel et, après chaque week-end, faire sécher les outils, les bâches et les tentes. Avant le camp, tu dois vérifier que tout a été racheté et aiguiser tout les outils.</p>
+			<p>Pour le camp, et avec ta HP, tu devras préparer les instalations.</p>
+			<p>Voici les liens qui pourront t'aider dans ta tâche extrèmement difficile:
+				<br>
+				<a href="http://www.scoutorama.org/-Campisme-.html">http://www.scoutorama.org/-Campisme-.html</a>
+				<br>
+				<a href="http://www.scoutorama.org/-Artisanat-et-Bricolage-.html">http://www.scoutorama.org/-Artisanat-et-Bricolage-.html</a>
+				<br>
+				<a href="http://www.scoutorama.org/-Pionnierisme-et-matelotage-.html">http://www.scoutorama.org/-Pionnierisme-et-matelotage-.html</a>
+			</p>
+		<img src="PA\HomePA_5.gif" class="hyper_mono badge"><img src="PA\HomePA_5.2.png" class="badge">
+	</div>
+	
+
+	<div id="RecapPionnier" class="green">
+		<h2>Recap PA Pionnier</h2>
+		<h3>Matériel (week-end):</h3>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	
+
+	<div id="Cuisinier" class="green">
+		<h2>Le Poste d'Action du Cuisinier-Maitre du feu</h2>
+			<p>Tu es cuisinier. Bien. Maintenant tu as un choix à faire. Que vas-tu donner à manger à tes gars? Tu peux, durant toute l'année acheter des boîtes, faire des pâtes ou du riz et dans ce cas le seul aspect technique, et encore, sera d'apprendre à faire du feu dans un temps respectable. Sinon, tu peux sortir du rang et te donner pour ta patrouille, chercher, pour chaque week-end, un repas simple, original et bon. Il est difficile de faire manger des légumes à des scouts en week-end et j'en sais quelque chose, mais pourtant... Quoi de mieux qu'une bonne soupe chaude avec une omelette après une journée de pluie? Quoi de mieux que d'être réconforter par une tartiflette durant une de ses longues nuit d'hiver qui peuvent-être si froide? Quoi de mieux qu'avoir une platé de légume gorgé d'eau sous un soleil de plomb ? Ton rôle est de réconforter les coeurs, de les maintenir dans de bonnes disposition pour le travail et l'effort. C'est toi qui comble les coeurs car quand les estomac sont pleins le coeur peut enfin être joyeux.</p>
+			<p>Ta place dans la préparation du week-end c'est les menus du week-end. A toi, une semaine avant, d'envoyer ton menu à ton CP qui pourra l'envoyer au patrouillard qui fait l'intendance. Attention aux légumes et fruits de saison !!! Avant chaque départ, tu dois, selon les besoins du week-end, prendre le matos de cuisine au local ou en faire la liste à ton CP pour qu'il puisse prendre le bon matos et ne rien oublier. Durant l'année, tu garniras le carnet de recette de la patrouille et bien sur l'utiliseras pour pouvoir faire des menus variés et originaux. Enfin, tu es le gardien de la malette à épices, regarnis-la quand le stock commence à s'épuiser et enrichis-la mais surtout utilise-la sans modération.</p>
+			<p>Enfin, pour le camp, ton rôle est de faire les plans du coin cuisine et de le faire lors des instals. Il faut aussi, avec ton CP, que tu check le matériel de cuisine. Fait bien attention, en camp on a besoin de plus de matos qu'en week-end ainsi que du matos plus variés. Prends du matos pour le concours cuisine, ça fait toujours plus classe d'avoir une nappe (un simple morceau de tissu propre unis), des couverts présentable (en plastique ça suffit) et de jolis plats avec lesquels tu vas servir les chefs. Pense bien à préparer à l'avance ton concours cuisine, voir à le faire une première fois chez toi.</p>
+			<p>PS: Pour tes menus, fais les en accord avec l'activité suivante. Si tu pars en sioul, la raclette sera un peu lourde dans les ventres...</p>
+			<p>Pour ta progression, tu peux t'aider de ces différents sites:<br> 
+				<a href="http://www.scoutorama.org/-Cuisine-.html">http://www.scoutorama.org/-Cuisine-.html</a>
+			</p>
+		<img src="PA\HomePA_4.gif" class="hyper_mono badge"> 
+		<img src="PA\HomePA_4.1.png" class="badge">
+	</div>
+	
+
+	<div id="RecapCuisinier" class="green">
+		<h2>Recap PA Cuisinier</h2>
+			<ol>
+				<li>
+					<h3 class="list">Ton rôle:</h3>
+					<ul>
+						<li>Préparer les menus de tout le week-end, ils doivent être envoyé une semaine avant</li>
+						<li>Faire le feu, bien anticiper, faire du feu peux prendre beaucoup de temps</li>
+						<li>Faire la cuisine</li>
+						<li>Gérer la vaisselle</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Préparation Camp:</h3>
+					<ul>
+						<li>Préparer le Concours Cuisine, bien le faire au moins une fois chez soi</li>
+						<li>Préparer, avec le Pionnier, les plans du coin cuisine</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Matos de Patrouille:</h3>
+					<ul>
+						<dl>
+							<li>Couvercle (1)</li>
+							<li>Peck</li>
+							<li>Savon Noir</li>
+							<li>Manique (2 à 4)</li>
+							<li>Caisse</li>
+							<li>Grosse Gamelle (1)</li>
+							<li>Poêle (au moins 2)</li>
+							<li>Casserole (1 ou 2)</li>
+							<li>Passoire (1)</li>
+							<li>Couteau (facultatif)</li>
+							<li>Économe (au moins 3)</li>
+							<li>Ustensiles de cuisine (spatule, cuillère en bois) ATTENTION : les intolérents aux gluten ne peuvent manger une cuisine faite avec des ustensiles en bois</li>
+							<li>Grilles BBQ (2)</li>
+							<li>Éponges (1 à 2 paquets)</li>
+							<li>Pailles de fer (au moins 3)</li>
+							<li>Bouteille de Gaz (au moins 2 pleines)</li>
+							<li>Réchaud (1)</li>
+							<li>Matériel de Con Cu:</li>
+							<dd>Nappe</dd>
+							<dd>Four</dd>
+							<dd>«Argenterie» en plastique</dd>
+							<dd>Beau Plat</dd>
+							<li>Mallette à Épices:</li>
+							<dd>Curry</dd>
+							<dd>Paprika</dd>
+							<dd>Cannelle</dd>
+							<dd>Sel</dd>
+							<dd>Poivre</dd>
+							<dd>Cumin</dd>
+							<dd>Menthe</dd>
+							<dd>Herbe de Provence</dd>
+							<dd>Piment</dd>
+						</dl>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Les Différents Types de feu</h3>
+					<ul>
+						<li>Tipi</li>
+						<li>Pyramide</li>
+						<li>Polynésien</li>
+						<li>Feu en étoile</li>
+					</ul>
+				</li>
+			</ol>
+		<footer>
+			<div class="footer">
+				<a href="PA/Cuisinier/Cuisinier.pdf" download="RecapPACuisinier.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Cuisinier</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Cuisinier/Cuisinier.odt" download="RecapPACuisinier.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Cuisinier</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+	
+
+	<div id="Feu" class="green">
+		<h2>Les Types de Feu</h2>
+			<h3>Les Règles de sécurité</h3>
+				<p>En terrain hors forêt, il est conseillé de faire un trou d’environ 2 à 5 cm pour un feu normal. Puis de faire le feu dans ce trou. </p>
+				<p>En forêt, il ne faut pas creuser, on risque de faire prendre les racines. Donc bien déblayer le sol, et faire attention à ce que les arbres se soient pas bas sinon ils peuvent prendre. Interdiction de faire du feu de plus de 50 cm dans les bois. Il est conseiller de délimiter le feu avec des pierres.</p>
+				<p>En cas de neige, il faut creuser la neige sans aller jusqu’au sol. Faire le feu sur le sol sera plus difficile que sur la neige.</p>
+				<p>Toujours avoir un jerrican d’eau à proximité.</p>
+			<h3>Tipi</h3>
+				<p>Feu de base, on commence par faire un tipi avec des branches, une fois qu’il y a des branches tout autour (branche fine), on met feu aux brindilles et au PJ au centre. Il est conseillé de faire le tipi autour des brindilles et du PJ. Faire bien attention à laisser une entrer d’air au moment de faire le tipi et bien laisser un léger espace entre le tipi de brindille et celui de branche fine. Une fois le feu bien parti, on peut faire chuter le tipi pour pouvoir poser la gamelle. Attention, un affaissement du tipi trop tôt tuera le feu.</p>
+				<img src="PA\Cuisinier\feu_tipi.png" class="hyper_mono little_img">
+			<h3>Pyramide</h3>
+				<p>Même principe que le feu en tipi en beaucoup plus haut. De plus on rajoute de grosse bûche en kapla tout autour de la pyramide, jusqu’à mi hauteur. Ce type de feu est pour la veiller et permet de grandes flammes ainsi qu’un feu intense.</p>
+				<img src="PA\Cuisinier\feu_en_pyramide.jpg" class="hyper_mono big_img">
+			<h3>Le Feu Polynésien</h3>
+				<p>Le principe du feu polynésien est de creuser profond puis de faire le feu à l’intérieur du trou. Ce trou est tapissé de bois. C’est un feu discret qui fume et éclaire peu. A ne jamais utiliser en et à proximité de forêt.</p>
+				<img src="PA\Cuisinier\feu_polynésien.jpg" class="hyper_mono little_img">
+			<h3>Le Feu en Etoile</h3>
+				<p>Le feu en étoile produit peu de chaleur mais c’est le feu qui fait le moins d’étincelles.</p>
+				<p>Il sert à économiser le bois mais il est aussi intéressant car il évite de couper le bois qui est long. Il suffit de pousser le bois vers le centre à mesure qu’il brûle. Il doit y avoir assez de braises. Il peut être utilisé aussi pour la cuisson.</p>
+				<img src="">
+			<h3>Faire un Four</h3>
+				<p>Pour faire un four portable, on peut prendre deux plats de cantine (deux grands plats rectangulaire avec poignée non forgé (pas comme sur l'image)). Et les clouer ensemble dont un cotés avec des charnières. A l’intérieur on fait le feu puis on met le plat et on ferme. Le rendu ressemble beaucoup au barbecue fermé avec thermomètre.</p>
+				<p>Pour faire un four en terre, il faut faire une structure en pierre recouverte de boue, comme une table à feu. On fait le feu à l’intérieur avec le plat. Ensuite, on ferme le four avec une pierre. On pourrait comparer la structure de ce four avec celle d’un tombeau.</p>
+				<p>Attention, dans les deux cas il faut une entrée d’air ainsi qu’un échappatoire. Il est conseillé dans le deuxième exemple de faire une cheminé.</p>
+				<img src="PA\Cuisinier\four_1.jpg" class="mini_multiple big_img">
+				<img src="PA\Cuisinier\FourEnTerre.jpeg" class="mini_multiple big_img">
+		<footer>
+			<div class="footer">
+				<a href="PA/Cuisinier/Feu.pdf" download="Les Différents Feux.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Les Feux</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Cuisinier/Feu.odt" download="Les Différents Feux.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Les Feux</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="Liturgiste">
+		<h2>Le Poste d'Action du Liturgiste</h2>
+			<p>Cher Liturgiste, je pense que tu arrive ici plein d'apréhension. Tu dois te dire que tu viens d'hériter du rôle poubelle que personne ne veut. Ou sinon tu es une de ces rares personnes qui aime le rôle de Liturgiste et tu souhaites trouver de l'inspiration pour préparer quelque chose de super pour ta patrouille. Sache que si tu es dans le premier cas, Liturgiste c'est pas si terrible. Par contre si tu veux vraiment faire une belle année, il faut que tu te motives et que tu fasses vraiment quelque chose de bien. Etre Liturgiste est assez compliqué car souvent la patrouille n'aime pas trop ça mais il est possible de rendre cette Liturgie interessante. Le premier conseil que je te donne c'est de te reposer sur ton CP. C'est lui qui est chargé de faire grandir les âmes qui lui sont confiés et de les mener sur le chemin du christ. Avec lui, tu pourras faire des choses grandioses. Mon deuxième conseil est de beaucoup parler avec ton CR pour chercher l'inspiration, et faire des activités en lien avec le temps liturgique et avec les activités que vous fera faire le CR lorsque vous serez en troupe. Mon troisième et dernier conseil est de prier. Ca parait anodin comme ça mais c'est ce qui te permettra de te mettre dans l'etat d'esprit et puis c'est pas le rechignement d'une patrouille qui fera reculer l'Esprit Saint.</p>
+			<p>Ton role pour la péparation des week-ends est de préparer une prière pour le début d'activité et une pour la fin d'activité, cette prière se sera toujours le CP qui la mènera, aussi laisse une liberté dans ce que tu prépares. Ton rôle dans ce prières c'est de proposer des démarches générales (je vous salut marie, dizaine, chapelet, acte de contrition, prière scout ...), ce sera à ton CP de garder ce qui lui semble pertinent lors de la prière. Ne sois pas vêxé si ton CP change toute la prière ou qu'il ne reprend rien de ce que tu as proposé, c'est juste qu'il aura juger qu'une autre prière serait plus approprié avec ce qui s'est passé dans l'activité. N'oublie pas l'angelus qui se fait à sept heure du matin, si vous dormez sur place. Souvent on le fait en bénédicité du petit-déjeuner. Si vous faites une veillée, n'oublie pas de faire une prière de conclusion. N'oublie pas non plus ton carnet de bénédicités ce qui te permettra de varier grâces et bénécicités. On peut bien sur completer le carnet avec diverse prières autre que grâces et bénédicités.</p>
+			<p>Tu es aussi le référent technique dans le service de messe. A toi d'aller, de motiver ta Pat et de leur apprendre comment on sert la messe pour en avoir de belles en patrouille.</p>
+			<p>Ensuite, pour le camp, tu dois confectionner une trousse liturgique, si ta patrouille n'en a pas déjà, qui est composé d'une croix, d'une statuette à la vierge, d'une grande bougie et d'un porte évangile qui sera utlisé lors des méditations. Tu es aussi responsable du coin prière de la patrouille, tu dois le confectionner, l'entretenir et faire en sorte qu'il ne soit pas là en vain.</p>
+			<p>Pour les activités de patrouille, je conseil à chaque week-end de faire 15 minutes d'enseignement liturgique avec une méditation de l'évangile, un courte méditation de cinq minutes. Durant cette méditation, une lecture d'abord à haute voix puis un temps de lecture personnel et de reflection pour finir par un partage de cette reflexion autour du gouter. Bien que le gouter puisse paraitre un détail anodin, il sera très important dans l'acceptation de ces 20 minutes de ce temps consacré à Jésus par la patrouille. Au début, les patrouillards ne vont rien faire durant le temps de reflexion et c'est normal. Ca va être ton role et à celui du CP d'animer ces échanges en partageant votre reflexion et à les emmener, durant le temps de partage, à faire cette reflexion. Petit à petit, ils comprendront et prendront gout à ce petit exercice. Pour ton week-end de PA, organise un pélerinage avec ton CP qui se terminera par une soiré d'adoration et de méditation animée par toi et ton CR.</p>
+			<p>Tu peux bien entendu t'aider de ce lien: 
+				<br>
+				<a href="http://www.scoutorama.org/-Connaissance-de-Dieu-.html">http://www.scoutorama.org/-Connaissance-de-Dieu-.html</a>
+			</p>
+			<img src="PA\HomePA_7.png" style="margin-left: 45%;" class="badge">
+	</div>
+
+
+	<div id="RecapLiturgiste">
+		<h2>Recap PA Liturgiste</h2>
+			<h3>Le Rôle du Liturgiste:</h3>
+				<p>Le Liturgiste doit préparer la prière de début et fin d’activité, et veiller à ce que les bénédicités et grâces soit faites ainsi que les prières préparés. Lors de la messe, c’est lui qui motive les patrouillards pour aller servir et qui va directement voir le prêtre pour proposer les services de la patrouille, bien entendu en accord avec le CP.</p>
+			<h3>Le Matos:</h3>
+				<p>	Le seul matériel dont à besoin un Liturgiste est un carnet de prière avec bénédicités et grâces incluses. A noter que lors du camp, de nombreux grâces et bénédicités doivent être connus pour pouvoir diversifier lors des repas. Le Carnet servira aussi à animer la prière à la fin des veillés. L’autre matériel dont a besoin un Liturgiste est sa voix.</p>
+			<h3>Les Connaissances:</h3>
+				<p>Le Liturgiste est le garant de la bonne tenue et déroulement de la messe. Il doit donc aider le prêtre à installer la crédence et l’autel. Pour ça il faut un minimum de connaissance liturgique.</p>
+				<h4>Les Couleurs Liturgiques</h4>
+					<p>Les Couleurs liturgiques dépendent du temps où nous sommes.</p>
+					<p>Le 
+						<span style="background-color: green;" class="text">
+							<ins>vert</ins>
+						</span> 
+						est la couleur du temps ordinaire.
+					</p>
+					<p>Le 
+						<span style="background-color: purple;" class="text">
+							<ins>violet</ins>
+						</span>
+						celle de l’attente et de la pénitence, les prêtres la porteront lors de l’avent et du Carême. 
+					</p>
+					<p>Le 
+						<span style="background-color: red;">
+							<ins>rouge</ins>
+						</span> 
+						est la couleur des martyrs et de l’Esprit Saint, elle est porté pour toute fête de saint martyr et lors du vendredi saint ainsi que lors des fêtes des apôtres et de la Pentecôte. 
+					</p>
+					<p>Le 
+						<b>
+							<ins>blanc</ins>
+						</b> 
+						est la couleur des fêtes, elle est porté à Noël et durant le temps de pâque ainsi que certain jour de la semaine sainte.
+					</p>
+					<p>Enfin, deux couleurs qui sont portés par les prêtres sans être des couleurs liturgiques sont le 
+						<span style="background-color: skyblue;" class="text">
+							<ins>bleu,</ins>
+						</span> 
+						couleur de Marie pouvant être porté lors de l’assomption, et le rose, violet plus clair, est la couleur qui mêle la joie et la pénitence, l’attente, on la porte le 3e dimanche de l’Avant et le 4e dimanche du Carême.
+					</p>
+				<h4>Le Matériel Liturgique: Les Vêtements</h4>
+					<p>Le Prêtre peut porter plusieurs vêtements lors de la célébration d’un messe. La tenue de base est l’aube, le vêtement blanc du dessous, et l’étole, l’« écharpe » de couleur par-dessus l’aube, chez les diacres celle-ci est en diagonale. Mais les prêtres peuvent aussi revêtir par dessus une chasuble, un grand vêtement ample à la couleur du temps liturgique. </p>
+					<p>Il convient, pour aider le prêtre, de sortir la bonne étole et la bonne chasuble pour qu’il est juste à la mettre avant célébrer la messe.</p>
+					<img src="PA\Liturgiste\aube.jpeg" class="micro_multiple long"> 
+					<img src="PA\Liturgiste\étole.jpeg" class="micro_multiple long"> 
+					<img src="PA\Liturgiste\chasuble.jpeg" class="micro_multiple long">
+				<h4>Le Matériel Liturgique: La crédence et l’autel</h4>
+					<p>Je ne présente ici que le matériel de base.</p>
+					<p>Le Ciboire est le contenant des hosties consacrés, certains peuvent ressembler à de simple bol et d’autre à une coupe très large refermable par un couvercle.</p>
+					<img src="PA\Liturgiste\Ciboire.jpeg" class="hyper_mono mini_img">
+					<p>Le Calice est le contenant du sang du christ. C’est une coupe, plus étroite que le Ciboire.</p>
+					<img src="PA\Liturgiste\Calice.jpeg" class="hyper_mono mini_img">
+					<p>La Patène est une sorte de grande assiette, souvent posé sur le Calice, où repose la grande hostie.</p>
+					<img src="PA\Liturgiste\patène.jpg" class="hyper_mono">
+					<p>Le Corporal est un des nombreux linges que tu dois connaître. Il est replié en carré, et doit être donné en premier au prêtre. C’est dessus que le prêtre pose Calice, Ciboire ect…</p>
+					<p>Le Purificatoire est un linge que l’on pose sur le Calice et qui sert à nettoyer les vases sacrés après utilisation.</p>
+					<p>Le Manuterge est un autre linge qui sert lors du lavabo. C’est le linge avec lequel le prêtre s’essuie les mains.</p>
+				<h4>Le Matériel Liturgique: Le service de l’autel</h4>
+					<p>Les Cierges entourent la croix, la parole de dieux et l’Eucharistie, ils rappellent que Dieu est lumière.</p>
+					<p>La Croix symbolise le Christ et passe en premier.</p>
+					<p>L’encens passe avant la croix, il symbolise la prière qui monte vers le ciel. La navette va avec l'encens. C'est le contenant de l'encens qui sera mis dans l'encensoir.</p>
+					<img src="PA\Liturgiste\croix_de_procession.jpeg" class="long mini_multiple"><img src="PA\Liturgiste\encensoire.jpg" class=" micro_img mini_multiple"><img src="PA\Liturgiste\navette.jpg" class="short mini_multiple">
+		<footer>
+			<div class="footer">
+				<a href="PA/Liturgiste/PA_Liturgiste.pdf" download="RecapPALiturgiste.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Liturgiste</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Liturgiste/PA_Liturgiste.odt" download="RecapPALiturgiste.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Liturgiste</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+
+	<div id="Priere" style="text-align: center;">
+		<h2>Prière</h2>
+			<h3>Benedicité</h3>
+			<h4>Air de Frère Jacque:</h4>
+				<p>À la table, à la table
+					<br>
+					Venez tous, venez tous
+					<br>
+					Et que Dieu bénisse, et que Dieu bénisse
+					<br>
+					Ce repas, ce repas
+				</p>
+			<h4>Bénissez-nous:</h4>
+				<p>Bénissez-nous seigneur,
+					<br>
+					Bénissez ce repas; ceux qui l’ont préparé
+					<br>
+					Et procurez du pain
+					<br>
+					À ceux qui n’en n’ont pas
+					<br>
+					Ainsi soit-il
+					<br>
+				</p>
+			<h4>Dieu de la Manne:</h4>
+				<p>Dieu de la manne
+						<br>
+					Dieu de la manne et des hébreux
+					<br>
+					Bénis ce repas en ce lieu
+					<br>
+					Ainsi soit-il
+					<br>
+				</p>
+			<h4>Quand la Soupe:</h4>
+				<p>Quand la soupe bout dans la marmite
+					<br>
+					«Vite, à table!» crient les marmitons
+					<br>
+					Accourez, venez tous bien vite
+					<br>
+					Recevoir du seigneur tous ses dons
+					<br>
+					Accourez, venez tous bien vite
+					<br>
+					Recevoir du seigneur tous ses dons
+					<br>
+				</p>
+			<h4>Un ami à droite, un ami à gauche:</h4>
+				<p>Un ami à droite, un ami à gauche
+					<br>
+					À tous bon appétit!
+					<br>
+					Un ami à droite, un ami à gauche<
+					br>
+					À tous bon appétit!
+					<br>
+					Merci seigneur, pour ce repas
+					<br>
+					Merci seigneur, pour ce repas
+					<br>
+					Merci seigneur, pour ce repas
+					<br>
+					À tous bon appétit!
+					<br>
+				</p>
+			<h4>Compagnons</h4>
+				<p>Compagnons, partageons ce pain
+					<br>
+					Mangeons tous car nous avons faim
+					<br>
+					Que Dieu Bénisse ce repas
+					<br>
+					Compagnons, Compagnons
+					<br>
+				</p>
+			<h4>Les Paysans de France:</h4>
+				<p>Bénis le labeur des paysans de France
+					<br>
+					Maître des moissons
+					<br>
+					Fais que leurs efforts assurent à tous nos frères, Le pain quotidien,
+					<br>
+					Et s’il vient un jour à manquer en France,
+					<br>
+					Souviens-toi
+					<br>
+					De ce jour où, pour une foule immense,
+					<br>
+					Tu le multiplias.
+					<br>
+				</p>
+			<h4>Maître du temps:</h4>
+				<p>Maître du ciel et des saisons,
+					<br>
+					Bénis le pain que nous mangeons,
+					<br>
+					À tous ceux qui ont faim et froid,
+					<br>
+					Donne la maison et le pain.
+					<br>
+				</p>
+			<h4>Sur l’air des Laudes scoute</h4>
+				<p>Au nom du Père et du Fils et du Saint-Esprit,
+					<br>
+					Seigneur, bénis cette table
+					,<br>
+					Et que ta main secourable,
+					<br>
+					Nous donne à tous le pain et le vin quotidiens.
+					<br>
+				</p>
+			<h4>Cinq Pains et deux Poissons</h4>
+				<p>Nos cinq pains et nos deux poissons,
+					<br>
+					Seigneur, nous te les offrons,
+					<br>
+					Multiplie les pour la faim des hommes,
+					<br>
+					Et qu’ensemble nous chantions ton nom !
+					<br>
+					Ô Dieu qui procurez pâture
+					<br>
+					Aux tout petits oiseaux,
+					<br>
+					Bénissez notre nourriture et purifiez notre eau.
+					<br>
+				</p>
+		<h3>Prières</h3>
+			<h4>Prière Scout:</h4>
+				<p>Seigneur Jésus apprenez-nous à être généreux,
+					<br>
+					À vous servir comme vous le méritez,
+					<br>
+					À donner sans compter,
+					<br>
+					À combattre sans souci des blessures,
+					<br>
+					À travailler sans chercher le repos,
+					<br>
+					À nous dépenser sans attendre d’autre récompense
+					<br>
+					Que celle de savoir
+					<br>
+					Que nous faisons votre sainte volonté.
+					<br>
+				</p>
+			<h4>Notre Père:</h4>
+				<p>Notre Père, qui es aux cieux,
+					<br>
+					que ton nom soit sanctifié,
+					<br>
+					que ton règne vienne,
+					<br>
+					que ta volonté soit faite sur la terre comme au ciel.
+					<br>
+					Donne-nous aujourd’hui notre pain de ce jour.
+					<br>
+					Pardonne-nous nos offenses,
+					<br>
+					comme nous pardonnons aussi à ceux qui nous ont offensés.
+					<br>
+					Et ne nous laisse pas entrer en tentation
+					<br>
+					mais délivre-nous du Mal.
+					<br>
+					Amen	
+					<br>
+				</p>
+			<h4>Je crois en Dieu:</h4>
+				<p>Je crois en Dieu, 
+					<br>
+					le Père tout-puissant, 
+					<br>
+					créateur du ciel et de la terre; 
+					<br>
+					et en Jésus-Christ,
+					 <br>
+					son Fils unique, notre Seigneur, 
+					<br>
+					qui a été conçu du Saint-Esprit, 
+					<br>
+					est né de la Vierge Marie, 
+					<br>
+					a souffert sous Ponce Pilate, 
+					<br>
+					a été crucifié, 
+					<br>
+					est mort et a été enseveli,
+					 <br>
+					est descendu aux enfers, 
+					<br>
+					le troisième jour est ressuscité des morts, 
+					<br>
+					est monté aux cieux, 
+					<br>
+					est assis à la droite de Dieu le Père tout-puissant, 
+					<br>
+					d’où il viendra juger les vivants et les morts.
+					 <br>
+					Je crois en l’Esprit-Saint, 
+					<br>
+					à la sainte Eglise catholique, 
+					<br>
+					à la communion des saints, 
+					<br>
+					à la rémission des péchés, 
+					<br>
+					à la résurrection de la chair, 
+					<br>
+					à la vie éternelle. 
+					<br>
+					Amen.
+					<br>
+				</p>
+			<h4>Je Vous salue Marie:</h4>
+				<p>Je vous salue Marie, pleine de grâce ;
+					<br>
+					Le Seigneur est avec vous.
+					<br>
+					Vous êtes bénie entre toutes les femmes
+					<br>
+					Et Jésus, le fruit de vos entrailles, est béni.
+					<br>
+					Sainte Marie, Mère de Dieu,
+					<br>
+					Priez pour nous pauvres pécheurs,
+					<br>
+					Maintenant et à l’heure de notre mort.
+					<br>
+					Amen
+					<br>
+				</p>
+			<h4>Notre Dame des Éclaireurs:</h4>
+				<p>Notre Dame des Éclaireurs:
+					<br>
+					<br>
+					Le soir étend sur la terre
+					<br>
+					Son grand manteau de velours
+					<br>
+					Et ce camp calme et solitaire
+					<br>
+					Se recueille en ton amour.
+					<br>
+					<br>
+					O vierge de lumière
+					<br>
+					Étoile de nos cœurs
+					<br>
+					Entends notre prière 
+					<br>
+					Notre-Dame des Éclaireurs.
+					<br>
+					<br>
+					O douce Dame aux étoiles
+					<br>
+					Jette un regard sur ce camp
+					<br>
+					Où tes fils sous leurs frêles toiles
+					<br>
+					Vont dormir en t’invoquant.
+					<br>
+					<br>
+					O toi plus blanche que neige
+					<br>
+					Dans ton manteau virginal
+					<br>
+					Ta beauté, Vierge, nous protège
+					<br>
+					Contre la laideur du mal.
+					<br>
+					<br>
+					Fais-nous quitter l’existence
+					<br>
+					Joyeux et pleins d’abandon
+					<br>
+					Comme un scout après les vacances<
+					<br>
+					S’en retourne à la maison.
+					<br>
+				</p>
+			<h4>Prière de Charles de Foucault:</h4>
+				<p>Mon Père, mon Père, je m’abandonne à toi,
+					<br>
+					Fais de moi ce qu’il te plaira.
+					<br>
+					Quoi que	 tu fasses, je te remercie.
+					<br>
+					Je suis prêt à tout, j’accepte tout.
+					<br>
+					Car tu es mon Père, je m’abandonne à toi,
+					<br>
+					Car tu es mon Père, je me confie en toi.
+					<br>
+					<br>
+					Mon Père, mon Père, en toi je me confie.
+					<br>
+					En tes mains je mets mon esprit
+					<br>
+					Je te le donne le cœur plein d’amour.
+					<br>
+					Je n’ai qu’un désir, t’appartenir.<br>
+					Car tu es mon Père, je m’abandonne à toi,
+					<br>
+					Car tu es mon Père, je me confie en toi.
+					<br>
+				</p>
+			<h4>Angélus:</h4>
+				<p>Voici que l’ange Gabriel
+					<br>
+					Devant la Vierge est apparu
+					<br>
+					De toi va naître un enfant Dieu
+					<br>
+					Et tu l’appelleras Jésus.
+					<br>
+					(Fin) Et son nom est Emmanuel.
+					<br>
+					<br>
+					De mon Seigneur j’ai tout reçu,
+					<br>
+					Je l’ai servi jusqu’à ce jour.
+					<br>
+					Qu’il fasse en moi sa volonté,
+					<br>
+					Je m’abandonne à son amour.
+					<br>
+					<br>
+					Et Dieu se fit petit enfant,
+					<br>
+					La Vierge lui donna son corps.
+					<br>
+					Il connut toute notre vie,
+					<br>
+					Nos humbles joies et notre mort.
+					<br>
+				</p>
+			<h4>Complies Scout</h4>
+				<p>Avant d’aller dormir, sous les étoiles,
+					<br>
+					Doux Maître, humblement à genoux,
+					<br>
+					Tes fils t’ouvrent leur cœur sans voile,
+					<br>
+					Si nous avons péché, pardonne-nous! 
+					<br>
+					<br>
+					Éloigne de ce camp le mal qui passe,
+					<br>
+					Cherchant dans la nuit son butin.
+					<br>
+					Sans toi, de toutes ces menaces,
+					<br>
+					Qui nous protégera, Berger divin? 
+					<br>
+					<br>
+					Protège aussi, Seigneur, ceux qui nous aiment,
+					<br>
+					Partout garde-les du péril.
+					<br>
+					Pitié pour les méchants eux-mêmes
+					<br>
+					Et paix à tous nos morts, ainsi soit-il.
+					<br> 
+				</p>
+		<footer	>
+			<div class="footer">
+				<a href="PA/Liturgiste/Prière.pdf" download="ListePrière.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Liste Prières</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Liturgiste/Prière.odt" download="ListePrière.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Liste Prières</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+	
+	<div id="Sportif" class="red petite">
+		<h2>Le Poste d'Action du Sportif-Secouriste</h2>
+			<p>Alors comme ça, être Sportif-Secouriste ça t'interesse... Tu n'es pas encore sur? Alors laisse moi te présenter ce PA.</p>
+			<p>En tant que Sportif-Secouriste, ton rôle est de veiller à ce que personne ne se blesse et si quelqu'un se blesse à lui prodiguer les premiers soins. Pour cela tu devras passer ton PSC 1, et veiller à bien faire un échauffement avant chaque jeu.</p>
+			<p>Pour chaque week-end, sauf les week-end où vous ne faites que du sport, tu devras organiser un petit jeu pour détendre l'atmosphère. Pas besoin de quelque chose de complexe. Fais une compétition pour faire monter la rivalité et pousser ta patrouille à se dépasser. Si un jeu est bien amené, la patrouille sera complètement pris par l'esprit du jeu et ne pensera à rien d'autre. Prévois 5 minutes de pause après ton jeu avant la reprise des activités. Bien sur tu devras bien demander à ton CP combiend de temps tu dispose pour faire ce jeu et éventuelement l'inclure dans le week-end par mise en scène en lien avec le thème du week-end.</p>
+			<p>Pour le matos, tu seras responsable de la trousse pharmacie. Cette trousse tu devras l'apporter à chaque week-end et racheter immédiatement ce qu'il te manque. Pour ton activité PA, je te conseil de faire des jeux autour du secourismes, des courses de brancarts, des exercices de secourisme en terrain accidenté (pente raide, rocher ect...)</p>
+			<p>Tu peux t'aider de ce lien: 
+				<br><a href="http://www.scoutorama.org/-Sport-et-Sante-.html">http://www.scoutorama.org/-Sport-et-Sante-.html</a>
+			</p>
+		<img src="PA\HomePA_3.gif" class="hyper_mono badge"> 
+		<img src="PA\HomePA_3.1.png" class="badge">
+	</div>
+
+
+	<div id="RecapSportif" class="red">
+		<h2>Recap PA Sportif-Secouriste</h2>
+			<ol>
+				<li>
+					<h3 class="list">Ton Rôle:</h3>
+						<ul>
+						<li>Maintenir la patrouille en forme</li>
+						<li>Préparer un dérouillage et le faire faire à la patrouille</li>
+						<li>Soigner les blessures quand il y en a</li>
+						<li>Préparer un petit jeu pour divertir sa patrouille</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Matos de Patrouille: Trousse à Pharma</h3>
+						<li>Coalgan</li>
+						<li>Pansement</li>
+						<li>Désinfectant (1 avec et 1 sans biseptine)</li>
+						<li>Sparadrap</li>
+						<li>Ciseaux</li>
+						<li>Compresse stérile</li>
+						<li>Sérum physiologique</li>
+						<li>Pince à épiler</li>
+						<li>Pince à tique</li>
+						<li>Aquatabs</li>
+						<li>Bande stérile</li>
+						<li>Gel hydroalcolique</li>
+						<li>Carnet de soins </li>
+						<li>Stylo</li>
+						<li>Biafine</li>
+						<li>Couverture de survie usage unique</li>
+						<li>Anti-insecte</li>
+						<li>Kit anti-poison</li>
+				</li>
+			</ol>
+			<p>ATTENTION ! Sans ordonnance AUCUN médicament ne peut être donné (même doliprane ou autre qui semble anodin) cad aucune substance, que ce soit de la crème ou qlq chose à ingurgiter, avec des effets actifs.</p>
+			<p>Les Scouts n'ont PAS le droit de retirer les tiques, seul les chefs peuvent le faire.</p>
+		<img src="PA\Sportif-Secouriste\trousse_pharma.jpg" style="height :12%;" class="big_multiple">
+		<img src="PA\Sportif-Secouriste\trousse-pharmacie-etanche.jpg" style="height :12%;" class="big_multiple">
+		<footer>
+			<div class="footer">
+				<a href="PA/Sportif-Secouriste/Secouriste.pdf" download="RecapPASecouriste.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Sportif-Secouriste</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Sportif-Secouriste/Secouriste.odt" download="RecapPASecouriste.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Sportif-Secouriste</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="Secourisme" class="red">
+		<h2>Quelques Points de Secourisme</h2>
+			<h3>L'Hypoxie</h3>
+				<p>La diminution de la pression de l’oxygène dans l’air ambiant entraîne une<b> diminution de la quantité d’oxygène disponible pour les cellules de l’organisme. </b> Ainsi se définit l’état d’hypoxie. L’oxygène est l’élément vital des cellules de l’organisme (en premier du cerveau, mais aussi des muscles…) on comprend que l’altitude représente un stress physiologique sévère pour l’organisme.</p>
+				<p>Pour parer à l’Hypoxie, il faut bien se connaître et connaître son seuil. Dès le début du passage du seuil d’altitude un coup de moût se fait ressentir, il faut le guetter et dès qu’il est ressenti s’arrêter et manger et boire un peu. Bien faire attention à son état de fatigue et ralentir une fois le seuil passé. Bien sur avoir passé un seuil ne veut pas dire qu’un deuxième ne suivra pas. Pour les asthmatique ne as forcer sur la ventoline à la moindre fatigue. Reposez vous comme les autres et surtout ne pas forcer après le passage du seuil. En cas de réel hypoxie (se fait à haute altitude), redescendre tout de suite. Les hypoxie peuvent se voir par diverses signes : une tête qui tourne, du mal à respirer ou quelqu’un qui a un comportement presque « fou ». Une hypoxie a aucune raison d’arriver en-dessous de 3000 m si celle-ci est causé par l’altitude. Le meilleur conseil est de s’entraîner et de ne jamais aller en haute altitude sans une personne expérimenter qui connaît les signes et les gestes pour parer au seuil et à l’hypoxie.</p>
+				<p>A la différence de la micro-gravité ou de l’environnement aquatique, lieux où la vie est impossible sans artifices, l’homme s’adapte à l’altitude. Lorsque l’on séjourne suffisamment en altitude, des mécanismes physiologiques se mettent en place ; ils permettent de compenser le manque d’oxygène. Cette adaptation a des limites, et la performance diminue avec l’altitude, même pour des sujets entraînés.</p>
+				<p>Un des reflets de l’adaptation à l’altitude est l’augmentation de l’hémoglobine. Cette protéine du sang sert à fixer et à transporter l’oxygène jusqu’aux cellules les plus reculées de l’organisme.</p>
+				<p>Un taux d’hémoglobine supérieur à la normale est donc nécessaire pour le skieur-alpiniste. Par contre, un taux trop élevé devient dangereux pour la santé ; il élève la viscosité sanguine créant ainsi un obstacle à la circulation sanguine, augmentant le risque de thrombose veineuse (phlébite) et diminuant la performance. La meilleure technique actuelle pour obtenir un bon taux d’hémoglobine est de séjourner régulièrement en altitude. Ces séjours acclimatent l’organisme et le préparent à l’effort en altitude. La performance en dépend.</p>
+			<h3>Les Gelures</h3>
+				<p>La gelure est une lésion localisée causée par l’action directe du froid au cours d’une exposition plus ou moins longue à une température inférieure à 0°c. Elle touche surtout les extrémités et les zones découvertes : doigts, nez, oreilles, joue, poignet. Le risque est maximal en hiver lorsque les températures sont très basses. <b>La gelure survient le plus souvent sur un défaut d’équipement </b>: trou dans la chaussette qui met l’orteil en contact direct avec la coque plastique, gant percé… Cela commence par une sensation de froid et d’engourdissement puis la zone devient insensible, la peau est blanche. Au stade initial la peau peut facilement revenir à la normale en la protégeant et la réchauffant. Sinon la gelure s’approfondit, avec un risque de séquelle.</p>
+				<p>Pour agir contre les engelures il faut connaître les signes. Il y a 4 grandes phases dans le processus d’engelure. La première est un ressenti de froid sur les extrémité et la peau est rouge. Peu de risque à ce stade mais faire attention mieux vaut réagir le plus tôt possible. La deuxième phase est un ressenti de froid plus généralisé et un ressenti d’engourdissement et de douleur au niveau des extrémité, souvent la personne se plaindra d’avoir mal et froid, la peau devient blanche. A la troisième phase, la personne ne ressens plus beaucoup ni le froid ni la douleur et arrêtera de se plaindre, la peau sera toujours blanche. ATTENTION : à partir de ce stade, il y a de grands risques, il faut impérativement agir. La quatrième phase se voit par le noircissement des extrémités, les séquelles sont alors irrévocables.</p>
+			<h3>L'Hypothermie</h3>
+				<p>Tout abaissement de la température centrale en dessous de 35°c constitue une hypothermie.</p>
+				<p>L’hypothermie est sévère en dessous de 30°c, à cette température, le coma s’installe. A la phase initiale (35°c), l’organisme réagit : frissons, vasoconstriction périphérique (les extrémités sont blanches et froides). Nous sommes mal équipés par la nature pour lutter contre le froid. La principale source de chaleur c’est le travail musculaire. Le risque d’hypothermie est donc maximum en cas d’immobilité. Il faut se couvrir, en commençant par la tête qui est la zone de plus grande déperdition calorique (les matériaux chauds et légers existent ! Pas d’excuses) et s’isoler du froid et du vent : trou, igloo, muret, tente de fortune…</p>
+				<p>Les quatres étapes de l'angelure est visible de manière plus global chez la personne en hyppothermie, mise à part les changements de couleurs de la peau. Le danger vient surtout quand la personne ne se plaind plus. Cependant, pour ne pas avoir de problème, il faut anticiper et ne pas attendre cette phase pour commencer à de dire qu'il faut réchauffer la personne.</p>
+				<p>Et même si ca parait anodin, n'étant pas habitué à l'hypothermie et à l'hypoxie, si vous voyez des signes n'hésitez as à appeler les secours, appel ne veut pas dire évacuation directement mais ils pourront vous conseiller au maximum pour qu'il n'y ait pas besoin de l'évacuation.</p>
+		<footer>
+			<div class="footer">
+				<a href="PA/Sportif-Secouriste/Secourisme.pdf" download="Secourisme.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Secourisme</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Sportif-Secouriste/Secourisme.odt" download="Secourisme.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Secourisme</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="Topographe" class="blue">
+		<h2>Le Poste d'Action du Topographe</h2>
+			<p>Bienvenue au Poste d'Action du Topographe. Ce poste est très important. C'est toi qui décidera de la longueur des ballades en prenant le chemin directe ou te perdant en plein au milieu de la forêt ou pire en faisant une boucle qui te ramènerai à ton point de départ. Ton poste c'est aussi d'instruire ta patrouille en culture général. Bien qu'en général ton rôle sois peu présent dans la patrouille, tu seras décisif à chaque fois que l'on aura besoin de toi, et surtout au camp.</p>
+			<p>Tu devras donc savoir faire des azimuts, des triangulations et surtout lire une carte et te repérer dessus. A chaque week-end tu devras avoir sur toi la trousse topo. Tu ne saura jamais ou rarement quand la patrouille aura besoin de toi, comme le messager, tu dois donc être toujours prêt, la trousse topo toujours sur toi.</p>
+			<p>Ta trousse topo devra toujours contenir papier crayon pour pouvoir faire des croquis topographique et panoramique, une carte du lieu d'activité et une boussole.</p>
+			<p>Sache que tu as aussi un autre rôle que celui de tenir la carte, de guider ta patrouille à travers bois. Tu es l'éclaireur par excellence. Partout, dans toutes les activités, c'est à toi de passer en premier, d'ouvrir le chemin. Ainsi, c'est toi qui, à chaque fois que ta patrouille sortira de ses lieux classiques de week-end, devra faire des recherches pour leur faire connaitre la culture de la région, leur faire, si le budget le permet, visiter des musées. Et surtout, c'est toi le pilier des projets de patrouille et des raids de patrouille. C'est toi qui regardera les itinéraires, qui devra anticiper le matos qu'il faut prendre, les modifications à apporter au matos habituel en cas de besoin. C'est toi qui prépare l'aspect technique des raids de patrouille et souvent des projets de patrouille.</p>
+			<p>Pour t'ameliorer tu pourras utiliser ces liens:
+				<br> 
+				<a href="http://www.scoutorama.org/-Le-ciel-.html">http://www.scoutorama.org/-Le-ciel-.html</a>
+				<br>
+				<a href="http://www.scoutorama.org/-Exploration-.html">http://www.scoutorama.org/-Exploration-.html</a>
+			</p>
+		<img src="PA\HomePA_6.jpeg" class="hyper_mono badge">
+	</div>
+
+
+	<div id="RecapTopographe" class="blue">
+		<h2>Recap PA Topographe</h2>
+			<ol>
+				<li>
+					<h3 class="list">Ton role:</h3>
+					<ul>
+						<li>
+							<b>Carte IGN </b>du lieu de camp, 
+							<b>boussole</b> 
+							<span style="color: red" class="text">
+								<b>toujours</b>
+							</span> à porter de main.
+						</li>
+						<li>S’informer sur l’histoire et la culture local, et la localisation des monuments du patrimoine à proximité.</li>
+						<li>
+							<h3 class="list">Matos de Patrouille: La trousse Topo</h3>
+							<ul>
+								<li>Carte IGN</li>
+								<li>Boussole</li>
+								<li>Papier</li>
+								<li>Crayon</li>
+								<li>Règle</li>
+								<li>Jumelles</li>
+								<li>Viseur Panoramique</li>
+								<li>Pochette plastique</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ol>
+		<img src="PA\Topographe\carte.jpeg" class="hyper_multiple big_img">
+		<img src="PA\Topographe\jumelle.jpeg"class="big_img micro_multiple">
+		<img src="PA\Topographe\boussole.jpeg" class="big_img micro_multiple">
+		<img src="PA\Topographe\papier_crayon.jpeg" class="big_img micro_multiple">
+		<img src="PA\Topographe\viseur.jpeg" class="little_img micro_multiple">
+		<footer>
+			<div class="footer">
+				<a href="PA/Topographe/Topographe.pdf" download="RecapPATopographe.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Topographe</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Topographe/Topographe.odt" download="RecapPATopographe.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Topographe</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="Bout" class="purple">
+		<h2>Le Poste d'Action du Bout-en-Train</h2>
+			<p>Le Poste de Bout-en-train n'est pas toujours facile. Durant cette année tu vas devoir vivre pleinement l'article 8 de la loie scout, le scout sourit et chante dans les difficultés. Plus que le vivre toi même, ton rôle est de le faire vivre en tout instant à ta patrouille. Pour cela le sourire est ton meilleur ami. Apprend des chants scouts, écoute-les sur youtube et n'hésite pas à les entonner durant l'effort. Trouve des chants pêchus à chanter durant le dérouillage, des chants entrainant mais pas explosif pour les longues marches ou les longs efforts comme les instals, des chants explosifs pour les veillées, et surtout des chants joyeux pour la journée. Puis apprend les à ta patrouille en les chantants et en leur donnant les paroles. Si ils ont les paroles et que la chanson leur plait, dès que tu entonneras le chant, ils suiveront. C'est aussi à toi de faire des jeux de mots, des blagues pour détendre l'atmosphère quand la patrouille est fatigué, à toi de connaitre les références culturels, cinématographiques et musicales pour pouvoir les mettres dans la veillé.</p>
+			<p>Pour chaque week-end de troupe, tu dois préparer du matos, les déguisements, pour la veillé. Ces déguisements doivent être en lien avec le thème de la veillé. Ton rôle se passe plus durant le week-end, chaque soir, avant le diner, tu devras préparer la veillé. Bien sur, tu n'es pas seul mais c'est toi le moteur, toi qui donne le mouvement, toi qui donne l'entrain pour la préparer et la faire. Ensuite pour la préparation du camp, tu dois diriger l'atelier de confection des déguisements. Chaque patrouillard doit avoir un déguisement en lien avec le thème du camp. Le mieux est de tous avoir un déguisement de patrouille pour les veillés qui ne sont pas en lien avec le thème du camp, un déguisement sur le thème du camp qui est le même pour chacun pour les veillés du camp où vous ne jouez pas ou peu, et un déguisement personnel qui sera pris chez soi, acheter par le patrouillard et qui sera à lui, dans son sac.</p>
+			<p>Au niveau du matos, tu dois t'occuper de la malle à déguisement. A l'ouverture de la patrouille, la patrouille a du effectuer un déguisement de patrouille par personne, entretien-les, refais-les avec ta patrouille si besoin. Ensuite durant ton activité PA, organise la confection des déguisements de l'année et mets-les dans la malle. Balance les déguisements trop déchiré, elle se re-remplira vite. Vérifie que ta patrouille ait bien un tra-son et un hodari, ainsi qu'un pied pour les carnets de chants. Si la patrouille n'a pas de pied, fais-en un. Si elle n'a pas tra-son ou hodari, achètes-en un. Enfin, tu as le carnet de chant. Le carnet de chant de patrouille est un carnet, normalement fait lors de l'ouverture de la patrouille et garnit par tous les anciens bouts-en-train, qui contient tous les chants connus par la patrouille. Si tu en connais d'autre garnis-le, apprends les chants du carnet à tes patrouillards et fais chanter ceux qu'ils aiment.</p>
+			<p>Tu peux t'aider de ces liens pour découvrir comment faire sourire en toute circonstance ta patrouille:  
+				<a href="http://www.scoutorama.org/-Expression-.html">http://www.scoutorama.org/-Expression-.html</a>
+			</p>
+		<img src="PA\HomePA_1.gif" class="hyper_mono badge">
+	</div>
+
+
+	<div id="RecapBout" class="purple">
+		<h2>Recap PA Bout-en-Train</h2>
+			<ol>
+				<li>
+					<h3 class="list">Ton rôle:</h3>
+					<ul>
+						<li>Mettre la bonne humeur</li>
+						<li>Prendre les costumes qui vont avec le thème du week-end</li>
+						<li>Préparer la veillé</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Préparation Camp</h3>
+					<ul>
+						<li>Faire les déguisements</li>
+						<li>Préparer la Grande Veillé du Camp</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Matos de Patrouille</h3>
+					<ul>
+						<dl>
+							<li>Malle à déguisements</li>
+							<dd>Déguisement de patrouille</dd>
+							<dd>Déguisement uniforme sur thème du camp</dd>
+							<dd>Hodari</dd>
+							<dd>Tra-son</dd>
+							<li>Carnet de Chant de Patrouille</li>
+						</dl>
+					</ul>
+				</li>
+				<li>
+					<h3 class="list">Les Différents type de Scénette:</h3>
+					<ul>
+						<li>Clic-Clac</li>
+						<li>Mime</li>
+						<li>Sketch</li>
+						<li>Cœur Parler</li>
+						<li>Bruitage</li>
+						<li>Ombre chinoise</li>
+						<li>Ombre tchèque</li>
+						<li>Ombre carton</li>
+						<li>Gants Blancs</li>
+						<li>Chanson</li>
+						<li>Nain</li>
+						<li>Bidi/ Gromlo</li>
+						<li>Poèsie</li>
+					</ul>
+				</li>
+			</ol>
+			<img src="PA\Bout\hodarie.jpg" class="big_img mini_mono">
+			<img src="PA\Bout\Tra-son.jpg" class="big_img mini_multiple">
+		<footer>
+			<div class="footer">
+				<a href="PA/Bout/PA_Liturgiste.pdf" download="RecapPABoutEnTrain.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Bout-en-Train</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Bout/PA_Liturgiste.odt" download="RecapPABoutEnTrain.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>PA Bout-en-Train</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="TechniqueTopo" class="blue" >
+		<h2>Technique Topographique</h2>
+			<h3>Localisation</h3>
+				<p>Pour se localiser sur une carte, il faut repérer autour de soi des points remarquables tels que
+				nivellements, lieux culturels, sommets, villes, monuments ou simplement bâtiments. Puis le repérer sur
+				la carte pour enfin se repérer soit sur la carte en reportant sa position réelle, par rapport à la position
+				réelle du point remarquable, sur la carte.</p>
+			<h3>Azimut</h3>
+				<p>Pour avoir un azimut et le garder sans la carte, il faut orienter sa boussole au nord, puis
+				tourner sa boussole de façon a ce qu’elle pointe vers l’azimut souhaité et que le N ou 0° des
+				azimuts soit au nord. Ensuite suivre la direction que pointe la boussole en faisant attention à ce que
+				le N ou 0° soit toujours aligné avec l’aiguille de la boussole.</p>
+			<h3>Triangulation</h3>
+				<p>Pour savoir où on est de manière précise, on peut avec trois points remarquables que l’on voit
+				de loin (trois sommet, trois ville ect…) se retrouver facilement grâce à la triangulation. Pour la
+				triangulation, il faut, pour chaque point remarquable, faire l’azimut réel entre votre position est celle
+				du point repérable. Ensuite, tracer chacun de ces azimuts en partant des points remarquables dont
+				vous aurez repérer l’emplacement sur la carte. Les trois droites vont se croiser en un point, votre
+				position.</p>
+			<img src="PA\Topographe\animation_boussole.gif" class="hyper_multiple">
+		<footer>
+			<div class="footer">
+				<a href="PA/Topographe/technique_topographie.pdf" download="technique_topographie.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Topographie</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Topographe/technique_topographie.odt" download="technique_topographie.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>Topographie</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="Veille" class="purple">
+		<h2>Organiser une Veillée</h2>
+			<h3>La Veillé:</h3>
+				<p>La Veillée suit ce qu’on appelle la Courbe de Veillé:</p>
+				<p>Dans un premier temps il y a l’appel à la veillé et ensuite deux, trois chants qui font monter
+				l’ambiance. Vient ensuite le 1er Sketch, puis de nouveaux quelques chants qui font monter
+				l’ambiance au maximum, les chants entonné à ce moment sont rapides et énergiques. Il y a alors le
+				Jeu, pic absolue de l’ambiance et de nouveaux deux, trois chants moins énergiques que les
+				précédents. Ensuite, 2eme Sketch et de nouveau deux, trois chants, le niveau d’ambiance est égal à
+				celui de départ . Vient le dernier Sketch qui plus calme que les autres puis 1 ou 2 chants très calme
+				et début de la prière.</p>
+				<p>A noter que pour le dernier sketch, il n’ y a pas de banc.</p>
+			<h3>Le Clic-Clac :</h3>
+				<p>Le principe d’un Clic-Clac est de narré une histoire, illustré par des « peintures » comique.
+				Il y a donc un narrateur. Ce narrateur raconte et de temps en temps s’arrête, « Clic », le drap
+				descend et on voit la « peinture » faite par les autres patrouillards qui illustre l’action narré
+				précédemment, « Clac », Le drap remonte et le narrateur recommence à narrer</p>
+			<h3>Le Cœur Parler :</h3>
+				<p>Le principe du Cœur parler est que chaque patrouillard va, chacun son tour, raconter un bout
+				de l’histoire. Pour cela, la patrouille est sur scène et tourne le dos à l’assemblée. Chacun, lorsqu’il
+				prend la parole, se retourne et récite son texte. Il y a plusieurs méthode pour rendre cette technique
+				intéressante.</p>
+				<p>La 1 er et la plus classique est que la patrouille se retourne un par un et récite une fois une
+				grande tirade, ainsi quand toute la patrouille a parler l’histoire est raconté. Pour captiver son
+				auditoire avec cette méthode, les orateurs doivent animer leur texte par de grand geste, en mettre
+				plein les yeux au public, exagérer le moindre petit rebondissement pour faire rire.</p>
+				<p>La 2 e méthode est de raconter l’histoire avec dynamique. Chaque patrouillard dit plusieurs
+				petites phrases. Chaque patrouillard ne reste devant le public que quelques secondes puis vient le
+				suivant et revient le précédant ect… le changement d’orateur doit paraître d’être fait au hasard,
+				toujours dans le désordre. Souvent, chaque petites phrases des patrouillards est ponctué par un
+				bruitage d’un autre patrouillard. Bref, les répliques sont courtes et les transitions de l’un à l’autre
+				rapides et nombreuses.</p>
+				<p>La 3 e méthode est d’assigné un rôle à chaque personnage et de raconter l’histoire sous forme
+				d’un dialogue. Chaque patrouillard à son rôle et quand il parle c’est toujours le personnage qui
+				parle. On peut alors mélanger tirades et courtes répliques.</p>
+			<h3>Le Sketch :</h3>
+				<p>Le Sketch est la forme la plus basique. Chacun parle et bouge, il n’y a pas de narrateur.
+				L’action est vécu par le publique.</p>
+			<h3>Le Mime :</h3>
+				<p>Dans le mime, le point de focalisation est les gestes des patrouillards. Il y a un narrateur qui
+				illustre les gestes des patrouillards mais qui reste peu présent, tout ce qui peut être compris avec que
+				les gestes est tut.</p>
+			<h3>Les Bruitages :</h3>
+				<p>Le principe du bruitage est de donner l’impression au publique de vivre l’action. D’en être
+				témoin. On va alors utiliser l’imagination de chacun. Chaque patrouillard se mettra en périphérie du
+				publique de manière à l’encercler. Le narrateur se place sur scène, bien au milieu. Tout le publique
+				ferme les yeux et l’action commence. Le narrateur va narrer l’histoire d’une voix douce sans
+				exclamation, de façon à ce que le publique focalise son attention sur les bruitages et non sur la narration. Les Patrouillards qui entourent le publique vont, en même temps que la narration, faire le bruitage. Ces bruitages seront le corps de l’action, là où toute l’émotion sortira. Attention cependant à ce que les bruitages ne soit trop fort et que le publique n’entendent pas la narration.</p>
+			<h3>Les Gants Blancs :</h3>
+				<p>Le principe des Gants blancs est de faire vivre à des personnages l’aventure. Pour cela, les
+				personnages et les paysages seront fait par les gants blancs. Il y a une narration. Le patrouillard de
+				centre ne fait que des paysages. Ceux à la périphéries alterneront, selon les scènes, paysage/
+				personnage. Durant tout le long de l’histoire, les gants alterneront, pour illustrer la narration, des
+				scènes d’action des personnages et des scènes où tout les gants forment un unique paysage.</p>
+			<h3>La Chanson :</h3>
+				<p>Le principe de la chanson est de reprendre l’air d’une chanson est de modifier les paroles de
+				la chanson. Le mieux est d’arriver à modifier que quelques mots d’une chanson que tout le monde
+				connaît. Les quelques mots permettront l’intégration de la chanson dans l’histoire général mais
+				aussi de mêler le sens de la chanson. En effet, le fait de garder la chanson assez semblable à
+				l’origine mais de changer quelques mots permet de changer le sens de la chanson original tout en lui
+				faisant un parallèle, les tournures de phrases gardé feront penser à la chanson mais le sens sera
+				changer.</p>
+			<h3>Les Ombres Chinoises :</h3>
+				<p>Le principe des Ombres Chinoises est de faire un mime avec possibilité de faire des effets.
+				En utilisant un objet ressemblant à celui que l’on veut faire passer, on donne l’impression au
+				spectateur de voir l’objet que l’on veut lui faire voir. Ainsi, on peut utiliser une corde pour faire voir
+				des organes au spectateur.</p>
+			<h3>Bidi:</h3>
+				<p>La Technique du bidi ressemble beaucoup à celle du sketch sauf qu'à la place d'utiliser du français, tout le monde parle en bidi. Une langue où il n'existe qu'un seul mot "bidi". Aux acteurs de mettre du ton pour faire rire son bidi!</p>
+		<footer>
+			<div class="footer">
+				<a href="PA/Bout/Organiser_une_veille.pdf" download="La Veillée.pdf">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>La Veillée</b><br>Format PDF</div>
+					</span>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="PA/Bout/Organiser_une_veille.odt" download="La Veillée.odt">
+					<img src="Download.jpeg" class="footer">
+					<span class="footer img">
+						<div class="text_footer"><b>La Veillée</b><br>Format ODT</div>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+</section>
+</body>
+</html>
